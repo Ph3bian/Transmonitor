@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AppLoader = () => {
-  return <div></div>
+  return <div> Loading...</div>
 }
 
 export default AppLoader

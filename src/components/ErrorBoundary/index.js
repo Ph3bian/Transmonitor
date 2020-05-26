@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 export class ErrorBoundary extends Component {
   state = {
-    hasError: false,
+    hasError: false
   }
 
   static getDerivedStateFromError(error) {
     return {
-      hasError: true,
+      hasError: true
     }
   }
 
@@ -24,12 +24,12 @@ export class ErrorBoundary extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             padding: '10px',
-            height: '90vh',
+            height: '90vh'
           }}
         >
           <div
             style={{
-              textAlign: 'center',
+              textAlign: 'center'
             }}
           >
             <h3>Something went wrong. Can't render this part.</h3>
