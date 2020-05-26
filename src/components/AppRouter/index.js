@@ -25,4 +25,4 @@ const AppRouter = () => (
     </Suspense>
   </Router>
 )
-export default AppRouter
+export default withAuth(AppRouter)
