@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
 import ErrorBoundary from '../ErrorBoundary'
-import { Layout } from '../Layout/'
+import Layout  from '../Layout'
 
 const PrivateRoute = ({
   component: Component,
