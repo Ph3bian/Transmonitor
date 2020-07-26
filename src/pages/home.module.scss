@@ -11,6 +11,12 @@
     grid-column-gap: 1em;
     &Item {
       background: $white;
+      height: 4.6875em;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.88em;
+      align-items: center;
+      border-radius: 2px;
     }
   }
   .analytics {
@@ -20,10 +26,9 @@
     h2 {
       font-size: 1.625em;
     }
-    .table{
-        &action{
-            
-        }
+    .table {
+      &action {
+      }
     }
   }
 }

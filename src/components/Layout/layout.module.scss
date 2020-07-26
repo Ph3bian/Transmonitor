@@ -6,6 +6,9 @@
   .header {
     padding: 1rem;
     height: 3.75em;
+    display: flex;
+    align-items: center;
+}
   }
   .container {
     display: grid;
