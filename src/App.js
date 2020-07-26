@@ -1,16 +1,6 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-import AppRouter from 'components/AppRouter'
-import { AuthProviderContainer } from 'context/AuthContext'
+import Root from 'components/Root'
 
-const App = () => {
-  return (
-    <AuthProviderContainer>
-      <BrowserRouter>
-        <AppRouter />
-      </BrowserRouter>
-    </AuthProviderContainer>
-  )
-}
+const App = () => <Root />
 
 export default App

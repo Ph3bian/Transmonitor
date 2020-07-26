@@ -1,5 +1,8 @@
 import React from 'react'
-
-const Home = () => <div>Home Page </div>
+import styles from './home.module.scss'
+const Home = () => {
+  console.log('Yelllloooooo')
+  return <div className={styles.Home}>Home Page </div>
+}
 
 export default Home
