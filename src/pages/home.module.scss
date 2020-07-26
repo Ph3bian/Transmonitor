@@ -21,6 +21,15 @@
   }
   .analytics {
     background: $white;
+    height: 20.56em;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    .graph {
+      width: 43.06em;
+    }
+    .summary {
+      
+    }
   }
   .payments {
     h2 {

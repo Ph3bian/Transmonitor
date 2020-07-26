@@ -30,7 +30,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className={styles.analytics}></div>
+      <div className={styles.analytics}>
+        <div className={styles.graph}></div>
+        <div className={styles.summary}>
+        
+        </div>
+      </div>
       <div className={styles.payments}></div>
     </div>
   )
