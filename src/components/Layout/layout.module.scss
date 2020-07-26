@@ -1,21 +1,25 @@
+@import '../../styles/variables.scss';
 .Layout {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-areas:
-    'header 		header 	header 	header'
-    'sidebar 		main 		main    main';
   font-size: 1rem;
   .header {
-    grid-area: header;
     padding: 1rem;
+    height: 3.75em;
   }
-  .main {
-    grid-area: main;
-    padding: 1rem;
-  }
+  .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    .main {
+      background: $bg;
+      height: calc(100vh - 3.75em);
+      padding: 2.0625em 1.875em 4.5em;
+    }
 
-  .sidebar {
-    grid-area: sidebar;
-    padding: 1rem;
+    .sidebar {
+      padding: 1rem;
+      height: calc(100vh - 3.75em);
+      width: 16.25em;
+    }
   }
 }
