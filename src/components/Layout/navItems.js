@@ -43,8 +43,32 @@ export default [
       {
         title: 'Manual Settlement',
         link: '/manual-settlement',
-        icon: <ManualSettlementsIcon/>,
+        icon: <ManualSettlementsIcon />,
       },
     ],
+  },
+  {
+    heading: 'Orders',
+    children: [
+      {
+        title: 'All Orders',
+        link: '/all-orders',
+        icon: <AllOrdersIcon />,
+      },
+      {
+        title: 'Pending Orders',
+        link: '/pending-orders',
+        icon: <PendingOrdersIcon />,
+      },
+      {
+        title: 'Reconciled Orders',
+        link: '/reconciled-orders',
+        icon: <ReconciledOrdersIcon />,
+      },
+    ],
+  },
+  {
+    heading: 'Merchant Profile',
+    headerIcon:<MerchantProfileIcon/>
   },
 ]
