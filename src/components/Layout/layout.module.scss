@@ -1,3 +1,21 @@
 .Layout {
-  //styles layout here
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'header 		header 	header 	header'
+    'sidebar 		main 		main    main';
+  font-size: 1rem;
+  .header {
+    grid-area: header;
+    padding: 1rem;
+  }
+  .main {
+    grid-area: main;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    padding: 1rem;
+  }
 }
