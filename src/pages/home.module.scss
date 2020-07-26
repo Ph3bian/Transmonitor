@@ -1,5 +1,29 @@
+@import '../styles/variables';
 .Home {
-  div {
-    color: red;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 1.6875em 2.6875em 0;
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+    &Item {
+      background: $white;
+    }
+  }
+  .analytics {
+    background: $white;
+  }
+  .payments {
+    h2 {
+      font-size: 1.625em;
+    }
+    .table{
+        &action{
+            
+        }
+    }
   }
 }

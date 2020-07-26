@@ -1,8 +1,20 @@
 import React from 'react'
 import styles from './home.module.scss'
 const Home = () => {
-  console.log('Yelllloooooo')
-  return <div className={styles.Home}>Home Page </div>
+  return (
+    <div className={styles.Home}>
+      <div className={styles.stats}>
+        <div className={styles.statsItem}>
+          <div></div>
+          <div></div>
+        </div>
+        <div></div>
+        <div></div> <div></div>
+      </div>
+      <div className={styles.analytics}></div>
+      <div className={styles.payments}></div>
+    </div>
+  )
 }
 
 export default Home
