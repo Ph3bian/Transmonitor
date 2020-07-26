@@ -4,11 +4,12 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, auto);
-  grid-row-gap: 1.6875em 2.6875em 0;
+  
   .stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1em;
+    margin-bottom:  1.6875em ;
     &Item {
       background: $white;
       height: 4.6875em;
@@ -24,11 +25,12 @@
     height: 20.56em;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    margin-bottom:   2.6875em ;
     .graph {
       width: 43.06em;
     }
     .summary {
-      
+
     }
   }
   .payments {
