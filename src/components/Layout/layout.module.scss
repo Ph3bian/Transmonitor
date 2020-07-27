@@ -4,6 +4,7 @@
   display: grid;
   grid-template-rows: 3.75em 1fr;
   font-family: 'Segoe UI';
+
   .header {
     padding: 0 1rem;
     box-shadow: $box-shadow;
@@ -133,4 +134,5 @@
       }
     }
   }
+  margin: -8px;
 }

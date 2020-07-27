@@ -18,12 +18,13 @@ const Chart = () => {
       showvalues: '0',
       plottooltext: '<b>$dataValue</b> Orders in $label',
       palettecolors:'#0291ff',
+      "baseFontSize": "10",
       theme: 'fusion',
     },
     data: [
       {
         label: 'Jan',
-        value: '38',
+        value: '8',
       },
       {
         label: 'Feb',
@@ -45,30 +46,7 @@ const Chart = () => {
         label: 'Jun',
         value: '150',
       },
-      {
-        label: 'July',
-        value: '102',
-      },
-      {
-        label: 'Aug',
-        value: '120',
-      },
-      {
-        label: 'Sep',
-        value: '350',
-      },
-      {
-        label: 'Oct',
-        value: '130',
-      },
-      {
-        label: 'Nov',
-        value: '200',
-      },
-      {
-        label: 'Dec',
-        value: '237',
-      },
+      
     ],
   }
   return (

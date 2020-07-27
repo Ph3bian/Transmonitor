@@ -95,7 +95,17 @@ const Home = () => {
       <div className={styles.payments}>
         <div className={styles.paymentsHeader}>
           <h2>Payments</h2>
-          <div className={styles.paymentsHeaderAction}></div>
+          <div className={styles.paymentsHeaderAction}>
+            <div>
+              <p>Showing 20 out of 500 payments </p>
+            </div>
+            <div className={styles.actions}>
+            <div>
+              <input type="search" />
+            </div>
+            <div className={styles.dropDown}></div>
+            </div>
+          </div>
         </div>
         <div className={styles.paymentsTable}>
           <Table data={data} schema={schema} />
