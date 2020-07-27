@@ -18,13 +18,42 @@
       padding: 0 2.1875em;
       .nav {
         display: flex;
+        align-items: center;
         ul {
           display: flex;
+          align-items: center;
           li {
             list-style: none;
             padding-right: 3.42em;
-            color:$grey;
+            color: $grey;
             font-size: 0.82em;
+            .profile {
+              display: flex;
+              align-items: center;
+              &Name {
+                margin-right: 0.5625em;
+                p {
+                  text-align: right;
+                  color: $grey;
+                  font-size: 0.625em;
+                  margin: 0;
+                  &:last-child {
+                    font-size: 0.875em;
+                  }
+                }
+              }
+              &Image {
+                img{
+                  border-radius: 50%;
+                  width:2.5em;
+                  object-fit: cover;
+
+                }
+              }
+            }
+            &:last-child {
+              padding-right: 0em;
+            }
           }
         }
       }
@@ -39,11 +68,11 @@
         input {
           border: 0;
           outline: none;
-          &[placeholder="Search..."]{
+          &[placeholder='Search...'] {
             color: $grey_5;
             font-family: 'Segoe UI';
             opacity: 60%;
-            font-size: .75em;
+            font-size: 0.75em;
           }
         }
       }
