@@ -47,7 +47,39 @@ const Home = () => {
       </div>
       <div className={styles.analytics}>
         <div className={styles.graph}></div>
-        <div className={styles.summary}></div>
+        <div className={styles.summary}>
+          <div>
+            <h3>Orders</h3>
+            <div className={styles.progressBar} role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <div>
+              <p>
+                Pending Orders: <span>20 </span>
+              </p>
+              <p>
+                Reconciled Orders: <span>80 </span>
+              </p>
+              <p>
+                Total Orders: <span>100 </span>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3>Payments</h3>
+            <div className={styles.progressBar}></div>
+            <div>
+              <p>
+                Pending Orders: <span>20 </span>
+              </p>
+              <p>
+                Reconciled Orders: <span>80 </span>
+              </p>
+              <p>
+                Total Orders: <span>100 </span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className={styles.payments}>
         <div className={styles.paymentsHeader}>
