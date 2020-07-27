@@ -18,6 +18,15 @@
       padding: 0.88em;
       align-items: center;
       border-radius: 2px;
+      p{
+        margin: 0;
+        &:first-child{
+          font-size: 0.75em;
+          color: $grey_2;
+          line-height: 133%;
+        }
+        font-size: 1.125em;
+      }
     }
   }
   .analytics {
@@ -36,6 +45,7 @@
   .payments {
     h2 {
       font-size: 1.625em;
+      font-weight: normal;
     }
     .table {
       &action {

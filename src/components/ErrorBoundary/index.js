@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 export class ErrorBoundary extends Component {
   state = {
     hasError: false
@@ -33,7 +32,7 @@ export class ErrorBoundary extends Component {
             }}
           >
             <h3>Something went wrong. Can't render this part.</h3>
-            <Link to="/"> Go Home </Link>
+      
           </div>
         </div>
       )

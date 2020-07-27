@@ -1,33 +1,34 @@
 import React from 'react'
-import TableLoader from "components/Loader/TableLoader"
-const Table = () => {
-  ;<table className="table">
-    <thead>
-      <tr>
-        {schema &&
-          schema.map(({ name, isCheckbox, Header }, index) =>
-            isCheckbox ? (
-              <th key={`${name}-${index}`}>{Header()}</th>
-            ) : (
-              <th key={`${name}-${index}`}>{name}</th>
-            )
-          )}
-      </tr>
-    </thead>
-    <tbody>
-      {loading && data.length === 0 && <TableLoader />}
 
-      {!loading && data.length === 0 && (
+const Table = ({ schema, data }) => {
+  const handleRenderRow = (rowData, schema) => (
+    <tr>
+      {schema &&
+        schema.map(({ accessor, render }, index) => {
+          if (render) {
+            return <td key={`${accessor}-${index}`}>{render(rowData)}</td>
+          }
+          return <td key={`${accessor}-${index}`}>{rowData[accessor] || ''}</td>
+        })}
+    </tr>
+  )
+
+  return (
+    <table className="table">
+      <thead>
         <tr>
-          <td className="center">
-            <p>{placeHolder}</p>
-          </td>
+          {schema &&
+            schema.map(({ name }, index) => (
+              <th key={`${name}-${index}`}>{name}</th>
+            ))}
         </tr>
-      )}
-      {!loading && data.length > 0 && (
-        <>{data.map((row) => this.handleRenderRow(row, schema))}</>
-      )}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {data.length > 0 && (
+          <>{data.map((row) => handleRenderRow(row, schema))}</>
+        )}
+      </tbody>
+    </table>
+  )
 }
 export default Table
