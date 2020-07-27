@@ -102,14 +102,38 @@
     }
     &Header {
       &Action {
-        display: flex;
+        display: grid;
         align-items: center;
         justify-content: space-between;
+        grid-template-columns: auto 1fr;
         font-size: 0.8125em;
+        grid-column-gap:4.38em;
         .actions {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          .search{
+            display: flex;
+            border-bottom: 1px solid $dark-text3;
+            color:$dark-text3;
+            align-items: center;
+            padding-bottom: .25em;
+            min-width: 21em;
+            input{
+              border:0;
+              outline:0;
+              background:transparent;
+              padding-left: 1em;
+              color:$grey;
+            }
+          }
+          .dropDown{
+            display: flex;
+            align-items: center;
+            p{
+              margin: 0 1em 0 0;
+            }
+          }
         }
       }
     }

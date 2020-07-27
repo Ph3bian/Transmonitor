@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './home.module.scss'
-import { StatsIcon } from 'assets/svg'
+import { StatsIcon, Search } from 'assets/svg'
 import Table from 'components/Table'
 import { data, schema } from './functions'
 import Chart from 'components/Chart'
 import Select from 'components/Form/Select'
 
 const Home = () => {
+  const [active, setActive] = useState('all')
   return (
     <div className={styles.Home}>
       <div className={styles.stats}>
@@ -102,22 +103,24 @@ const Home = () => {
               <p>Showing 20 out of 500 payments </p>
             </div>
             <div className={styles.actions}>
-              <div>
-                <input type="search" />
+              <div className={styles.search}>
+                <Search />
+                <input type="search" value="Search payments"/>
               </div>
               <div className={styles.dropDown}>
+                <p>Show</p>
                 <Select
                   options={[
                     {
                       text: 'All',
-                      value: 'All',
+                      value: 'all',
                     },
                     {
                       text: 'Reconciled',
                       value: 'Reconciled',
                     },
                     {
-                      text: 'UnReconciled',
+                      text: 'Unreconciled',
                       value: 'UnReconciled',
                     },
                     {
@@ -129,6 +132,8 @@ const Home = () => {
                       value: 'Unsettled',
                     },
                   ]}
+                  active={active}
+                  setActive={setActive}
                 ></Select>
               </div>
             </div>
