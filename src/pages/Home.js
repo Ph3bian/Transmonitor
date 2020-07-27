@@ -3,7 +3,7 @@ import styles from './home.module.scss'
 import { StatsIcon } from 'assets/svg'
 import Table from 'components/Table'
 import { data, schema } from './functions'
-
+import Chart from 'components/Chart'
 const Home = () => {
   return (
     <div className={styles.Home}>
@@ -46,7 +46,12 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.analytics}>
-        <div className={styles.graph}></div>
+        <div className={styles.graph}>
+          <div></div>
+          <div>
+            <Chart />
+          </div>
+        </div>
         <div className={styles.summary}>
           <div>
             <h3>Orders</h3>

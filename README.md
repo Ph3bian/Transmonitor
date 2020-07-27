@@ -1,5 +1,5 @@
 # [Transmonitor UI](https://transmonitor.ph3bian.com/)
-This project was bootstrapped with Create React App, hosted on https://transmonitor.ph3bian.com/.
+This project was bootstrapped with Create React App, hosted on netlify with domain name: https://transmonitor.ph3bian.com/.
 
 ## Available Scripts
 

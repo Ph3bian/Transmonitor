@@ -1,0 +1,7 @@
+.Chart{svg {
+    > g[class^='raphael-group']:nth-last-child(2) {
+      > text {
+        display: none !important;
+      }
+    }
+  }}
