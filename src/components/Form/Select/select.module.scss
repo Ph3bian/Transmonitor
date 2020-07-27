@@ -24,7 +24,7 @@
     padding: 0 1.6em;
     @include md {
       padding: 0.5em .625em;
-      font-size: 0.88em;
+      font-size: 0.8125em;
       display: flex;
       align-items: center;
       width: 10.71em;
@@ -36,11 +36,10 @@
   }
   &Options {
     position: absolute;
-    margin-top: 1em;
-    top: 3.5em;
+    top: 2.25em;
     background: $white;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: all 0.5s ease;
     outline: none;
     z-index: 3;
@@ -49,9 +48,9 @@
       padding: 0.55em;
       cursor: pointer;
       outline: none;
+      color:$grey;
      font-size: 0.8125em;
       &:hover {
-        color: $white;
         background: $focused-grey;
       }
     }
