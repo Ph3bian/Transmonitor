@@ -1,8 +1,9 @@
 import React from 'react'
 import { ChevronDown } from 'assets/svg'
+import styles from "./home.module.scss"
 export const data = [
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -10,7 +11,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -18,7 +19,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -26,7 +27,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -34,7 +35,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -42,7 +43,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -50,7 +51,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -58,7 +59,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -66,7 +67,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
@@ -74,7 +75,7 @@ export const data = [
     icon: <ChevronDown />,
   },
   {
-    itemType: "Apple Mac book '15' 250 SSD 12GB",
+    itemType: <div className={styles.initials}><div >VW</div><span>Apple Mac book '15' 250 SSD 12GB"</span></div>,
     price: '$73430',
     transNo: '1234567890',
     time: '12:30',
