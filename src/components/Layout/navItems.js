@@ -19,6 +19,7 @@ export default [
         title: 'Overview',
         link: '/overview',
         icon: <OverviewIcon />,
+        className: 'active',
       },
     ],
   },
@@ -69,6 +70,6 @@ export default [
   },
   {
     heading: 'Merchant Profile',
-    headerIcon:<MerchantProfileIcon/>
+    headerIcon: <MerchantProfileIcon />,
   },
 ]

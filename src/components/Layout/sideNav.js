@@ -17,8 +17,8 @@ const SideNav = () => (
           </div>
           <ul className={styles.navList}>
             {children &&
-              children.map(({ icon, link, title }, id) => (
-                <li key={`${id}${link}`}>
+              children.map(({ icon, link, title, className }, id) => (
+                <li key={`${id}${link}`} className={styles[className]}>
                   {icon}
                   {title}
                 </li>

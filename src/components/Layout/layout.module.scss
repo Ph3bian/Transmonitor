@@ -105,13 +105,14 @@
     }
     .nav {
       &Container {
-        padding-left: 2.625em;
+   
         margin-bottom: 2.1875em;
         & > div {
           margin-bottom: 0.875em;
           font-size: 0.6875em;
           display: flex;
           align-items: center;
+          padding-left: 3.81em;
           svg {
             margin-right: 1em;
             width: 1.454em;
@@ -126,13 +127,20 @@
           font-size: 0.6875em;
           display: flex;
           align-items: center;
+          padding-left: 3.81em;
           svg {
             margin-right: 1em;
             width: 1.454em;
           }
         }
+       
       }
     }
+  }
+  .active{
+    background-color: rgba(24, 117, 240, 0.1);
+    padding: .9em 0;
+    border-left: 4px solid $blue-2;
   }
   margin: -8px;
 }
