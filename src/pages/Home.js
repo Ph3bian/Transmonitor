@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from './home.module.scss'
-import { StatsIcon, Search } from 'assets/svg'
+import { StatsIcon, Search, DropDown } from 'assets/svg'
 import Table from 'components/Table'
 import { data, schema } from './functions'
 import Chart from 'components/Chart'
@@ -100,12 +100,15 @@ const Home = () => {
           <h2>Payments</h2>
           <div className={styles.paymentsHeaderAction}>
             <div>
-              <p>Showing 20 out of 500 payments </p>
+              <p>
+                Showing <span>20 <DropDown /></span>
+                out of 500 payments
+              </p>
             </div>
             <div className={styles.actions}>
               <div className={styles.search}>
                 <Search />
-                <input type="search" value="Search payments"/>
+                <input type="search" value="Search payments" />
               </div>
               <div className={styles.dropDown}>
                 <p>Show</p>
