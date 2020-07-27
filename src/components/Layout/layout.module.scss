@@ -3,12 +3,29 @@
   font-size: 1rem;
   display: grid;
   grid-template-rows: 3.75em 1fr;
-  font-family: "Segoe UI";
+  font-family: 'Segoe UI';
   .header {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
+    padding: 0 1rem;
     box-shadow: $box-shadow;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 16.255em 1fr;
+    &Content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2.1875em;
+      .nav {
+        display: flex;
+        ul {
+          display: flex;
+          li {
+            list-style: none;
+            padding-right: 3em;
+          }
+        }
+      }
+    }
   }
   .container {
     display: grid;
@@ -32,7 +49,7 @@
       display: flex;
       padding-left: 1.9375em;
       align-items: center;
-      margin: 2.0625em 0 2em ;
+      margin: 2.0625em 0 2em;
     }
     .nav {
       &Container {

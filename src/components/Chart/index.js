@@ -7,6 +7,7 @@ import styles from "./chart.module.scss"
 ReactFusioncharts.fcRoot(FusionCharts, Charts, FusionTheme)
 
 const Chart = () => {
+    //TODO: make chart a dynamic component
   const dataSource = {
     chart: {
       caption: '',
