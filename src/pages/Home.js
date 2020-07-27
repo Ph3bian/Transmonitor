@@ -4,6 +4,8 @@ import { StatsIcon } from 'assets/svg'
 import Table from 'components/Table'
 import { data, schema } from './functions'
 import Chart from 'components/Chart'
+import Select from 'components/Form/Select'
+
 const Home = () => {
   return (
     <div className={styles.Home}>
@@ -100,10 +102,35 @@ const Home = () => {
               <p>Showing 20 out of 500 payments </p>
             </div>
             <div className={styles.actions}>
-            <div>
-              <input type="search" />
-            </div>
-            <div className={styles.dropDown}></div>
+              <div>
+                <input type="search" />
+              </div>
+              <div className={styles.dropDown}>
+                <Select
+                  options={[
+                    {
+                      text: 'All',
+                      value: 'All',
+                    },
+                    {
+                      text: 'Reconciled',
+                      value: 'Reconciled',
+                    },
+                    {
+                      text: 'UnReconciled',
+                      value: 'UnReconciled',
+                    },
+                    {
+                      text: 'Settled',
+                      value: 'Settled',
+                    },
+                    {
+                      text: 'Unsettled',
+                      value: 'Unsettled',
+                    },
+                  ]}
+                ></Select>
+              </div>
             </div>
           </div>
         </div>

@@ -34,16 +34,15 @@
     background: $white;
     height: 20.56em;
     display: grid;
-    grid-template-columns: 64.7%  35.3%;
-    margin-bottom: 2.6875em;
+    grid-template-columns: 64.7% 35.3%;
+    margin-bottom: 1.6875em;
     .graph {
-    
     }
     .summary {
       padding-right: 2.9375em;
-      h3{
-        font-size:0.875em;
-        margin-bottom:0.785em;
+      h3 {
+        font-size: 0.875em;
+        margin-bottom: 0.785em;
       }
       .progressBar {
         height: 0.25em;
@@ -51,16 +50,16 @@
         display: flex;
         align-items: center;
         margin-bottom: 0.6875em;
-        div{
-          &:first-child{
-            width:70%;
-            background:$green;
+        div {
+          &:first-child {
+            width: 70%;
+            background: $green;
             height: 100%;
           }
-          &:last-child{
-            width:30%;
+          &:last-child {
+            width: 30%;
             height: 100%;
-            background:$yellow;
+            background: $yellow;
           }
         }
       }
@@ -95,17 +94,19 @@
     h2 {
       font-size: 1.625em;
       font-weight: normal;
+      margin: 0 0 0.805em;
     }
     .table {
       &action {
       }
     }
-    &Header{
-      &Action{
+    &Header {
+      &Action {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .actions{
+        font-size: 0.8125em;
+        .actions {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -125,7 +126,7 @@
       justify-content: center;
       align-items: center;
       margin-right: 1.625em;
-      color:$white;
+      color: $white;
     }
   }
 }
