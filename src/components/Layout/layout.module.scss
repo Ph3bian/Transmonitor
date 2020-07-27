@@ -19,9 +19,44 @@
     }
 
     .sidebar {
-      padding: 1rem;
       height: calc(100vh - 3.75em);
       width: 16.25em;
+    }
+  }
+  .SideNav {
+    font-size: 1rem;
+    color: $grey;
+    .action {
+      display: flex;
+      padding-left: 1.9375em;
+      align-items: center;
+      margin-bottom: 2em;
+      margin-bottom: 32px;
+    }
+    .nav {
+      &Container {
+        padding-left: 2.625em;
+        margin-bottom: 2.1875em;
+        & > div {
+          margin-bottom: 0.875em;
+          font-size: 0.6875em;
+          display: flex;
+          align-items: center;
+        }
+      }
+      &List {
+        padding-inline-start: 0;
+        li {
+          list-style: none;
+          margin-bottom: 1em;
+          font-size: 0.6875em;
+          display: flex;
+          align-items: center;
+          svg {
+            margin-right: 1em;
+          }
+        }
+      }
     }
   }
 }

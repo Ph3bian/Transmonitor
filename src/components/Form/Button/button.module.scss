@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+.button {
+  font-size: 1rem;
+  &[data-variant='primary'] {
+    background: $primary;
+    border-radius: 30px;
+    letter-spacing: 0.2px;
+    font-size: 0.75em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: $white;
+    height: 2.75em;
+    padding: 0.75em 2.16em;
+    text-transform: uppercase;
+    line-height: 116%;
+  }
+}

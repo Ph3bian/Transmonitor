@@ -1,18 +1,21 @@
 import React from 'react'
 import NavItems from './navItems'
 import Button from 'components/Form/Button'
+import styles from './layout.module.scss'
 const SideNav = () => (
-  <div>
-    <div>
-      <Button type="button"> Generate Invoice</Button>
+  <div className={styles.SideNav}>
+    <div className={styles.action}>
+      <Button type="button" data-variant="primary">
+        Generate Invoice
+      </Button>
     </div>
-    <div className="navs">
+    <div className={styles.nav}>
       {NavItems.map(({ heading, children, headerIcon }, id) => (
-        <div key={id}>
+        <div key={id} className={styles.navContainer}>
           <div>
             {headerIcon ? headerIcon : ''} {heading}
           </div>
-          <ul>
+          <ul className={styles.navList}>
             {children &&
               children.map(({ icon, link, title }, id) => (
                 <li key={`${id}${link}`}>
