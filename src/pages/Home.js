@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './home.module.scss'
 import { StatsIcon } from 'assets/svg'
-import Table from "components/Table"
-import {data, schema} from "./functions"
+import Table from 'components/Table'
+import { data, schema } from './functions'
 
 const Home = () => {
   return (
@@ -55,8 +55,8 @@ const Home = () => {
           <div className={styles.paymentsHeaderAction}></div>
         </div>
         <div className={styles.paymentsTable}>
-          <Table data={data}/>
-          </div>
+          <Table data={data} schema={schema} />
+        </div>
       </div>
     </div>
   )

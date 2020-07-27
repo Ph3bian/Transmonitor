@@ -1,12 +1,13 @@
 @import '../../styles/variables.scss';
 .Layout {
-  display: grid;
-  grid-template-rows: auto 1fr;
   font-size: 1rem;
+  display: grid;
+  grid-template-rows: 3.75em 1fr;
   font-family: "Segoe UI";
+  height: 100vh;
+  overflow-y:scroll;
   .header {
     padding: 1rem;
-    height: 3.75em;
     display: flex;
     align-items: center;
   }
@@ -15,8 +16,10 @@
     grid-template-columns: auto 1fr;
     .main {
       background: $bg;
-      height: calc(100vh - 3.75em);
+
+      min-height: calc(100vh - 3.75em);
       padding: 2.0625em 1.875em 4.5em;
+      
     }
 
     .sidebar {

@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "./table.module.scss"
 
 const Table = ({ schema, data }) => {
   const handleRenderRow = (rowData, schema) => (
@@ -14,7 +15,8 @@ const Table = ({ schema, data }) => {
   )
 
   return (
-    <table className="table">
+    <div className={styles.Table}>
+    <table >
       <thead>
         <tr>
           {schema &&
@@ -29,6 +31,7 @@ const Table = ({ schema, data }) => {
         )}
       </tbody>
     </table>
+    </div>
   )
 }
 export default Table
