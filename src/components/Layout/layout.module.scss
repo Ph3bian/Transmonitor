@@ -8,6 +8,7 @@
     padding: 1rem;
     display: flex;
     align-items: center;
+    box-shadow: $box-shadow;
   }
   .container {
     display: grid;
@@ -31,8 +32,7 @@
       display: flex;
       padding-left: 1.9375em;
       align-items: center;
-      margin-bottom: 2em;
-      margin-bottom: 32px;
+      margin: 2.0625em 0 2em ;
     }
     .nav {
       &Container {
