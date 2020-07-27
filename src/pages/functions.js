@@ -1,4 +1,5 @@
 import React from 'react'
+import { ChevronDown } from 'assets/svg'
 export const data = [
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -6,6 +7,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -13,6 +15,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -20,6 +23,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -27,6 +31,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -34,6 +39,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -41,6 +47,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -48,6 +55,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -55,6 +63,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -62,6 +71,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
   {
     itemType: "Apple Mac book '15' 250 SSD 12GB",
@@ -69,6 +79,7 @@ export const data = [
     transNo: '1234567890',
     time: '12:30',
     status: 'Pending',
+    icon: <ChevronDown />,
   },
 ]
 export const schema = [
@@ -95,6 +106,6 @@ export const schema = [
   },
   {
     name: '',
-    accessor: 'more',
+    accessor: 'icon',
   },
 ]

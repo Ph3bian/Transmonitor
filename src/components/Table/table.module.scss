@@ -24,7 +24,10 @@
           padding: 1.875em;
           text-align: left;
           font-size: 0.875em;
-          color:$dark-text;
+          color: $grey_4;
+          &:first-child {
+            color: $dark-text;
+          }
         }
       }
     }
