@@ -1,6 +1,7 @@
 @import '../../../styles/variables';
 .button {
   font-size: 1rem;
+  font-family: "Segoe UI";
   &[data-variant='primary'] {
     background: $primary;
     border-radius: 30px;
