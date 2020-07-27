@@ -1,5 +1,5 @@
 import React from 'react'
-import { Logo, Bell } from 'assets/svg'
+import { Logo, Bell, Search } from 'assets/svg'
 import styles from './layout.module.scss'
 const Header = () => {
   return (
@@ -9,6 +9,7 @@ const Header = () => {
       </div>
       <div className={styles.headerContent}>
         <div className={styles.search}>
+          <Search/>
           <input type="search" placeholder="Search..." />
         </div>
         <div className={styles.nav}>

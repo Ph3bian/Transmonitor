@@ -11,3 +11,4 @@ export { ReactComponent as ManualSettlementsIcon } from './manual-settlements.sv
 export { ReactComponent as MerchantProfileIcon } from './merchant-profile.svg'
 export { ReactComponent as StatsIcon } from './stats.svg'
 export { ReactComponent as ChevronDown } from './chevron-down.svg'
+export { ReactComponent as Search } from './search.svg'

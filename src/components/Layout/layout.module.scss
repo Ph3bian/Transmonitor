@@ -10,6 +10,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 16.255em 1fr;
+
     &Content {
       display: flex;
       justify-content: space-between;
@@ -21,7 +22,28 @@
           display: flex;
           li {
             list-style: none;
-            padding-right: 3em;
+            padding-right: 3.42em;
+            color:$grey;
+            font-size: 0.82em;
+          }
+        }
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        color: $grey_5;
+        font-family: 'Segoe UI';
+        svg {
+          margin-right: 1em;
+        }
+        input {
+          border: 0;
+          outline: none;
+          &[placeholder="Search..."]{
+            color: $grey_5;
+            font-family: 'Segoe UI';
+            opacity: 60%;
+            font-size: .75em;
           }
         }
       }
