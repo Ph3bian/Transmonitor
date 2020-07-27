@@ -50,7 +50,10 @@ const Home = () => {
         <div className={styles.summary}>
           <div>
             <h3>Orders</h3>
-            <div className={styles.progressBar} role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <div className={styles.progressBar} role="progressbar">
+              <div></div>
+              <div></div>
+            </div>
             <div>
               <p>
                 Pending Orders: <span>20 </span>
@@ -66,7 +69,10 @@ const Home = () => {
 
           <div>
             <h3>Payments</h3>
-            <div className={styles.progressBar}></div>
+            <div className={styles.progressBar} role="progressbar">
+              <div></div>
+              <div></div>
+            </div>
             <div>
               <p>
                 Pending Orders: <span>20 </span>
